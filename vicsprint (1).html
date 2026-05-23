@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VIC SPRINT — Same-day cargo van delivery across Victoria & Nanaimo, Vancouver Island. Medical courier, trades supply, monthly contracts. Fully insured. Call now.">
+<meta name="keywords" content="cargo van delivery Victoria BC, same day delivery Nanaimo, medical courier Vancouver Island, delivery company Victoria, cargo delivery Vancouver Island">
+<meta property="og:title" content="VIC SPRINT — Vancouver Island Cargo Delivery">
+<meta property="og:description" content="Same-day delivery. Medical courier. Monthly contracts. Victoria & Nanaimo, BC.">
+<meta property="og:type" content="website">
+<title>VIC SPRINT — Vancouver Island Cargo Delivery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ── Reset & Tokens ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #042C53;
+  --navy-mid:   #0C447C;
+  --blue:       #1565C8;
+  --blue-bright:#2B7FFF;
+  --accent:     #F4A200;
+  --accent-lt:  #FFF3CC;
+  --white:      #FFFFFF;
+  --off-white:  #F7F8FA;
+  --gray-lt:    #EEF1F5;
+  --gray-mid:   #8B95A3;
+  --gray-dk:    #2E3A47;
+  --text:       #1A2533;
+  --font-head:  'Barlow Condensed', sans-serif;
+  --font-body:  'Barlow', sans-serif;
+  --radius:     6px;
+  --radius-lg:  12px;
+  --shadow:     0 4px 24px rgba(4,44,83,0.12);
+  --shadow-lg:  0 12px 48px rgba(4,44,83,0.18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ── Utility ─────────────────────────────────────────────────── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: var(--navy);
+  font-family: var(--font-head); font-weight: 700;
+  font-size: 17px; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 14px 28px; border-radius: var(--radius);
+  text-decoration: none; border: none; cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.btn-primary:hover { background: #FFB800; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,162,0,0.4); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--white);
+  font-family: var(--font-head); font-weight: 700;
+  font-size: 17px; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 13px 28px; border-radius: var(--radius);
+  text-decoration: none; border: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer; transition: all 0.15s;
+}
+.btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+section { padding: 80px 0; }
+.section-label {
+  font-family: var(--font-head); font-size: 13px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--blue); margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--font-head); font-size: clamp(36px, 5vw, 54px);
+  font-weight: 800; line-height: 1.05; color: var(--navy);
+  text-transform: uppercase; letter-spacing: -0.01em;
+}
+.section-title span { color: var(--blue); }
+.section-sub {
+  font-size: 17px; color: var(--gray-mid); max-width: 560px;
+  margin-top: 14px; line-height: 1.65;
+}
+
+/* ── NAV ─────────────────────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(4,44,83,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.3s;
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px; padding: 0 24px; max-width: 1100px; margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--font-head); font-size: 26px; font-weight: 900;
+  color: var(--white); letter-spacing: 0.06em; text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  font-family: var(--font-head); font-size: 14px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-cta {
+  font-family: var(--font-head); font-size: 14px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  background: var(--accent); color: var(--navy);
+  padding: 8px 18px; border-radius: var(--radius);
+  text-decoration: none; transition: all 0.15s;
+}
+.nav-cta:hover { background: #FFB800; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu {
+  display: none; flex-direction: column; gap: 4px;
+  background: var(--navy); padding: 16px 24px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.mobile-menu a {
+  font-family: var(--font-head); font-size: 18px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: rgba(255,255,255,0.8); text-decoration: none;
+  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.mobile-menu a:last-child { border-bottom: none; color: var(--accent); }
+
+/* ── HERO ─────────────────────────────────────────────────────── */
+#hero {
+  min-height: 100vh;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+  padding: 100px 0 60px;
+}
+
+/* Diagonal grid lines */
+#hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      -55deg,
+      transparent,
+      transparent 60px,
+      rgba(255,255,255,0.025) 60px,
+      rgba(255,255,255,0.025) 61px
+    );
+  pointer-events: none;
+}
+
+/* Big diagonal accent block */
+.hero-accent-block {
+  position: absolute; right: -60px; top: -80px;
+  width: 55%; height: 110%;
+  background: linear-gradient(145deg, #0C447C 0%, #1565C8 100%);
+  transform: skewX(-8deg);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.hero-accent-stripe {
+  position: absolute; right: 38%; top: 0; bottom: 0;
+  width: 6px;
+  background: var(--accent);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: center;
+  max-width: 1100px; margin: 0 auto; padding: 0 24px;
+  width: 100%;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-head); font-size: 13px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 18px;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-eyebrow::before {
+  content: ''; display: block;
+  width: 32px; height: 2px; background: var(--accent);
+}
+
+.hero-title {
+  font-family: var(--font-head); font-weight: 900;
+  font-size: clamp(56px, 7vw, 88px);
+  line-height: 0.95; letter-spacing: -0.02em;
+  text-transform: uppercase; color: var(--white);
+  margin-bottom: 24px;
+}
+.hero-title .accent { color: var(--accent); display: block; }
+.hero-title .thin { font-weight: 400; opacity: 0.55; }
+
+.hero-desc {
+  font-size: 18px; color: rgba(255,255,255,0.72);
+  line-height: 1.65; margin-bottom: 36px; max-width: 460px;
+}
+
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+.hero-trust {
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-head); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.trust-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0;
+}
+
+/* Hero right panel */
+.hero-right {
+  display: flex; flex-direction: column; gap: 16px;
+}
+.hero-stat-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 22px 26px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s, background 0.3s;
+}
+.hero-stat-card:hover { transform: translateX(6px); background: rgba(255,255,255,0.09); }
+.hsc-top { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+.hsc-icon {
+  width: 42px; height: 42px; border-radius: 8px;
+  background: var(--accent); display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+}
+.hsc-num {
+  font-family: var(--font-head); font-size: 32px; font-weight: 900;
+  color: var(--white); line-height: 1;
+}
+.hsc-label {
+  font-family: var(--font-head); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); margin-top: 2px;
+}
+.hsc-desc {
+  font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.5;
+}
+
+/* ── TICKER ───────────────────────────────────────────────────── */
+.ticker-wrap {
+  background: var(--accent); overflow: hidden;
+  padding: 12px 0; border-top: none;
+}
+.ticker-track {
+  display: flex; gap: 0;
+  animation: ticker 28s linear infinite;
+  width: max-content;
+}
+.ticker-track:hover { animation-play-state: paused; }
+.ticker-item {
+  font-family: var(--font-head); font-size: 14px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--navy); white-space: nowrap;
+  padding: 0 32px;
+  display: flex; align-items: center; gap: 32px;
+}
+.ticker-item::after { content: '◆'; font-size: 8px; margin-left: 32px; }
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── SERVICES ─────────────────────────────────────────────────── */
+#services { background: var(--off-white); }
+.services-head { margin-bottom: 52px; }
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.service-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: 32px 28px; border: 1px solid var(--gray-lt);
+  position: relative; overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: default;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--blue);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.3s;
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-card.featured {
+  background: var(--navy); border-color: var(--navy);
+}
+.service-card.featured::before { background: var(--accent); }
+.service-icon {
+  font-size: 36px; margin-bottom: 18px; display: block;
+  filter: none;
+}
+.service-name {
+  font-family: var(--font-head); font-size: 22px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.02em;
+  color: var(--navy); margin-bottom: 10px;
+}
+.service-card.featured .service-name { color: var(--white); }
+.service-card.featured .service-icon { filter: brightness(1.5); }
+.service-desc {
+  font-size: 15px; color: var(--gray-mid); line-height: 1.6;
+  margin-bottom: 20px;
+}
+.service-card.featured .service-desc { color: rgba(255,255,255,0.6); }
+.service-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.service-tag {
+  font-family: var(--font-head); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 20px;
+  background: var(--gray-lt); color: var(--navy);
+}
+.service-card.featured .service-tag {
+  background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8);
+}
+
+/* ── COVERAGE ─────────────────────────────────────────────────── */
+#coverage { background: var(--white); }
+.coverage-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 64px; align-items: center;
+}
+.coverage-map {
+  position: relative; border-radius: var(--radius-lg);
+  overflow: hidden; background: var(--navy);
+  min-height: 420px;
+  display: flex; align-items: center; justify-content: center;
+}
+.map-svg-wrap { width: 100%; padding: 32px; }
+/* VI Stylised Map */
+.vi-map { width: 100%; max-width: 420px; }
+.map-island { fill: #0C447C; stroke: rgba(255,255,255,0.15); stroke-width: 1; }
+.map-water { fill: #042C53; }
+.map-dot {
+  fill: var(--accent);
+  filter: drop-shadow(0 0 8px rgba(244,162,0,0.7));
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
+.map-dot-2 { animation-delay: 0.8s; }
+.map-label {
+  fill: white; font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.map-route {
+  stroke: var(--accent); stroke-width: 2; stroke-dasharray: 6 4;
+  fill: none; opacity: 0.7;
+  animation: dash-anim 3s linear infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { r: 7; opacity: 1; }
+  50% { r: 11; opacity: 0.7; }
+}
+@keyframes dash-anim {
+  to { stroke-dashoffset: -40; }
+}
+.coverage-pills {
+  display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0;
+}
+.coverage-pill {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--navy); color: var(--white);
+  font-family: var(--font-head); font-size: 14px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 10px 18px; border-radius: 30px;
+}
+.pill-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.coverage-list { list-style: none; }
+.coverage-list li {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 0; border-bottom: 1px solid var(--gray-lt);
+  font-size: 16px; color: var(--gray-dk);
+}
+.coverage-list li:last-child { border-bottom: none; }
+.coverage-list li::before {
+  content: '→'; color: var(--blue); font-weight: 700;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+/* ── RATES ────────────────────────────────────────────────────── */
+#rates { background: var(--navy); position: relative; overflow: hidden; }
+#rates::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg, transparent, transparent 40px,
+    rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px
+  );
+  pointer-events: none;
+}
+#rates .section-title { color: var(--white); }
+#rates .section-label { color: var(--accent); }
+#rates .section-sub { color: rgba(255,255,255,0.55); }
+.rates-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px; margin-top: 48px;
+}
+.rate-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg); padding: 28px 24px;
+  transition: transform 0.25s, background 0.25s;
+}
+.rate-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.09); }
+.rate-card.highlight {
+  background: var(--accent); border-color: var(--accent);
+}
+.rate-card.highlight .rate-type,
+.rate-card.highlight .rate-price,
+.rate-card.highlight .rate-note,
+.rate-card.highlight .rate-items li { color: var(--navy); }
+.rate-type {
+  font-family: var(--font-head); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 12px;
+}
+.rate-card.highlight .rate-type { color: var(--navy); opacity: 0.7; }
+.rate-name {
+  font-family: var(--font-head); font-size: 22px; font-weight: 800;
+  text-transform: uppercase; color: var(--white); margin-bottom: 4px;
+}
+.rate-card.highlight .rate-name { color: var(--navy); }
+.rate-price {
+  font-family: var(--font-head); font-size: 38px; font-weight: 900;
+  color: var(--white); line-height: 1; margin-bottom: 4px;
+}
+.rate-note { font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 20px; }
+.rate-divider { border: none; border-top: 1px solid rgba(255,255,255,0.12); margin-bottom: 16px; }
+.rate-card.highlight .rate-divider { border-color: rgba(4,44,83,0.2); }
+.rate-items { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.rate-items li {
+  font-size: 14px; color: rgba(255,255,255,0.65);
+  display: flex; align-items: center; gap: 8px;
+}
+.rate-items li::before { content: '✓'; color: var(--accent); font-weight: 700; }
+.rate-card.highlight .rate-items li::before { color: var(--navy); }
+
+.rates-note {
+  margin-top: 32px; padding: 20px 24px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius); border-left: 3px solid var(--accent);
+  font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.6;
+}
+.rates-note strong { color: var(--accent); }
+
+/* ── WHY ──────────────────────────────────────────────────────── */
+#why { background: var(--off-white); }
+.why-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 24px; margin-top: 48px;
+}
+.why-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: 30px 28px; border: 1px solid var(--gray-lt);
+  display: flex; gap: 20px; align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.why-icon-wrap {
+  width: 52px; height: 52px; border-radius: 10px;
+  background: var(--navy); display: flex;
+  align-items: center; justify-content: center;
+  font-size: 24px; flex-shrink: 0;
+}
+.why-text-title {
+  font-family: var(--font-head); font-size: 20px; font-weight: 800;
+  text-transform: uppercase; color: var(--navy); margin-bottom: 6px;
+}
+.why-text-desc { font-size: 15px; color: var(--gray-mid); line-height: 1.6; }
+
+/* ── PROCESS ──────────────────────────────────────────────────── */
+#process { background: var(--white); }
+.process-steps {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; margin-top: 52px; position: relative;
+}
+.process-steps::before {
+  content: ''; position: absolute;
+  top: 36px; left: 12.5%; right: 12.5%;
+  height: 2px; background: linear-gradient(90deg, var(--accent), var(--blue));
+  z-index: 0;
+}
+.process-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+.step-num {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--navy); border: 4px solid var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  font-family: var(--font-head); font-size: 28px; font-weight: 900;
+  color: var(--white);
+}
+.step-title {
+  font-family: var(--font-head); font-size: 18px; font-weight: 800;
+  text-transform: uppercase; color: var(--navy); margin-bottom: 8px;
+}
+.step-desc { font-size: 14px; color: var(--gray-mid); line-height: 1.6; }
+
+/* ── QUOTE FORM ───────────────────────────────────────────────── */
+#quote {
+  background: linear-gradient(135deg, var(--navy) 0%, #0C447C 100%);
+  position: relative; overflow: hidden;
+}
+#quote::after {
+  content: 'VICSPRINT';
+  position: absolute; right: -40px; bottom: -40px;
+  font-family: var(--font-head); font-size: 180px; font-weight: 900;
+  color: rgba(255,255,255,0.03); letter-spacing: -0.04em;
+  line-height: 1; pointer-events: none; user-select: none;
+}
+.quote-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 64px; align-items: start;
+}
+.quote-left h2 {
+  font-family: var(--font-head); font-size: clamp(38px, 5vw, 58px);
+  font-weight: 900; text-transform: uppercase; color: var(--white);
+  line-height: 1.0; margin-bottom: 16px;
+}
+.quote-left h2 span { color: var(--accent); }
+.quote-left p { font-size: 17px; color: rgba(255,255,255,0.6); line-height: 1.65; margin-bottom: 32px; }
+.contact-items { display: flex; flex-direction: column; gap: 16px; }
+.contact-item {
+  display: flex; align-items: center; gap: 16px;
+  text-decoration: none;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius); padding: 16px 20px;
+  transition: all 0.2s;
+}
+.contact-item:hover { background: rgba(255,255,255,0.12); transform: translateX(4px); }
+.contact-icon {
+  width: 44px; height: 44px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+}
+.ci-phone { background: var(--accent); }
+.ci-whatsapp { background: #25D366; }
+.ci-email { background: var(--blue); }
+.contact-label {
+  font-family: var(--font-head); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.45); margin-bottom: 2px;
+}
+.contact-val {
+  font-family: var(--font-head); font-size: 18px; font-weight: 700;
+  color: var(--white); letter-spacing: 0.02em;
+}
+
+/* Form */
+.quote-form {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: 36px 32px;
+}
+.form-title {
+  font-family: var(--font-head); font-size: 22px; font-weight: 800;
+  text-transform: uppercase; color: var(--navy); margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.form-group label {
+  font-family: var(--font-head); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--navy);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 12px 14px;
+  border: 1.5px solid var(--gray-lt); border-radius: var(--radius);
+  font-family: var(--font-body); font-size: 15px; color: var(--text);
+  background: var(--off-white); transition: border-color 0.2s, background 0.2s;
+  outline: none; appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--blue); background: var(--white);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-submit {
+  width: 100%; padding: 15px;
+  background: var(--navy); color: var(--white); border: none;
+  border-radius: var(--radius); cursor: pointer;
+  font-family: var(--font-head); font-size: 17px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  transition: background 0.2s, transform 0.15s;
+}
+.form-submit:hover { background: var(--blue); transform: translateY(-2px); }
+.form-note {
+  text-align: center; margin-top: 12px;
+  font-size: 12px; color: var(--gray-mid);
+}
+.success-msg {
+  display: none; padding: 16px; background: #EAF3DE;
+  border-radius: var(--radius); text-align: center;
+  font-family: var(--font-head); font-size: 16px; font-weight: 700;
+  color: #3B6D11; margin-top: 14px; letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── FOOTER ───────────────────────────────────────────────────── */
+footer {
+  background: #020F1C; padding: 40px 0 28px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.footer-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 20px;
+}
+.footer-logo {
+  font-family: var(--font-head); font-size: 22px; font-weight: 900;
+  color: var(--white); letter-spacing: 0.06em; text-decoration: none;
+}
+.footer-logo span { color: var(--accent); }
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-links a {
+  font-family: var(--font-head); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--white); }
+.footer-copy {
+  font-size: 12px; color: rgba(255,255,255,0.25);
+  text-align: center; margin-top: 24px;
+  padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ── Float CTA ────────────────────────────────────────────────── */
+.float-cta {
+  position: fixed; bottom: 28px; right: 28px; z-index: 99;
+  display: flex; flex-direction: column; gap: 10px;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s;
+  pointer-events: none;
+}
+.float-cta.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+.float-btn {
+  width: 54px; height: 54px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.float-btn:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(0,0,0,0.4); }
+.float-wa { background: #25D366; }
+.float-ph { background: var(--accent); }
+
+/* ── Animations ───────────────────────────────────────────────── */
+.fade-up {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up-d1 { transition-delay: 0.1s; }
+.fade-up-d2 { transition-delay: 0.2s; }
+.fade-up-d3 { transition-delay: 0.3s; }
+.fade-up-d4 { transition-delay: 0.4s; }
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-right { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .coverage-inner { grid-template-columns: 1fr; }
+  .coverage-map { min-height: 280px; }
+  .rates-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .process-steps::before { display: none; }
+  .quote-inner { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+@media (max-width: 600px) {
+  section { padding: 56px 0; }
+  .hero-right { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; }
+  .hero-btns .btn-primary,
+  .hero-btns .btn-outline { text-align: center; justify-content: center; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">VIC<span>SPRINT</span></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#rates">Rates</a>
+      <a href="#why">Why Us</a>
+      <a href="#quote" class="nav-cta">Get a Quote</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu" role="button">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#coverage" onclick="toggleMenu()">Coverage</a>
+    <a href="#rates" onclick="toggleMenu()">Rates</a>
+    <a href="#why" onclick="toggleMenu()">Why Us</a>
+    <a href="#quote" onclick="toggleMenu()">Get a Free Quote →</a>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-accent-block"></div>
+  <div class="hero-accent-stripe"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Vancouver Island's Cargo Van Specialists</div>
+      <h1 class="hero-title">
+        <span class="thin">Fast.</span>
+        <span class="accent">Reliable.</span>
+        Delivered.
+      </h1>
+      <p class="hero-desc">
+        Same-day cargo van delivery across Victoria &amp; Nanaimo. Medical courier, trades supply, monthly contracts — fully insured, professionally operated.
+      </p>
+      <div class="hero-btns">
+        <a href="tel:+16047274469" class="btn-primary">📞 Call Now</a>
+        <a href="#quote" class="btn-outline">Get a Free Quote</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><div class="trust-dot"></div>Fully Insured</div>
+        <div class="trust-item"><div class="trust-dot"></div>NSC Certified</div>
+        <div class="trust-item"><div class="trust-dot"></div>Background Checked</div>
+        <div class="trust-item"><div class="trust-dot"></div>Same-Day Service</div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-stat-card">
+        <div class="hsc-top">
+          <div class="hsc-icon">⚡</div>
+          <div>
+            <div class="hsc-num">2 hr</div>
+            <div class="hsc-label">Average pickup time</div>
+          </div>
+        </div>
+        <div class="hsc-desc">Book before noon — we're on-site same day across Victoria &amp; Nanaimo.</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-top">
+          <div class="hsc-icon">🛡️</div>
+          <div>
+            <div class="hsc-num">$2M+</div>
+            <div class="hsc-label">Liability coverage</div>
+          </div>
+        </div>
+        <div class="hsc-desc">Full cargo insurance + commercial general liability. Your goods are protected.</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-top">
+          <div class="hsc-icon">📋</div>
+          <div>
+            <div class="hsc-num">POD</div>
+            <div class="hsc-label">Every delivery</div>
+          </div>
+        </div>
+        <div class="hsc-desc">Timestamped photo proof of delivery sent directly to your inbox after every run.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ─────────────────────────────────────────────────── -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <div class="ticker-item">Same-Day Delivery</div>
+    <div class="ticker-item">Victoria &amp; Nanaimo</div>
+    <div class="ticker-item">Medical Courier</div>
+    <div class="ticker-item">Trades Supply Runs</div>
+    <div class="ticker-item">Monthly Contracts</div>
+    <div class="ticker-item">Courier Subcontracts</div>
+    <div class="ticker-item">Fully Insured</div>
+    <div class="ticker-item">NSC Certified</div>
+    <div class="ticker-item">Same-Day Delivery</div>
+    <div class="ticker-item">Victoria &amp; Nanaimo</div>
+    <div class="ticker-item">Medical Courier</div>
+    <div class="ticker-item">Trades Supply Runs</div>
+    <div class="ticker-item">Monthly Contracts</div>
+    <div class="ticker-item">Courier Subcontracts</div>
+    <div class="ticker-item">Fully Insured</div>
+    <div class="ticker-item">NSC Certified</div>
+  </div>
+</div>
+
+<!-- ── SERVICES ───────────────────────────────────────────────── -->
+<section id="services">
+  <div class="container">
+    <div class="services-head">
+      <div class="section-label fade-up">What We Deliver</div>
+      <h2 class="section-title fade-up fade-up-d1">Our <span>Services</span></h2>
+      <p class="section-sub fade-up fade-up-d2">From urgent same-day runs to long-term monthly contracts — we cover the delivery needs that matter most to Vancouver Island businesses.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card featured fade-up">
+        <span class="service-icon">⚡</span>
+        <div class="service-name">Same-Day Delivery</div>
+        <div class="service-desc">Book before noon, delivered today. Cargo van capacity for bulky, heavy, or multi-item loads that couriers can't handle.</div>
+        <div class="service-tags">
+          <span class="service-tag">Victoria</span>
+          <span class="service-tag">Nanaimo</span>
+          <span class="service-tag">2 hr pickup</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up fade-up-d1">
+        <span class="service-icon">🏥</span>
+        <div class="service-name">Medical &amp; Pharmacy Courier</div>
+        <div class="service-desc">Daily prescription delivery, inter-facility transfers, and medical supply runs. Background-checked, cargo-insured, and Island Health familiar.</div>
+        <div class="service-tags">
+          <span class="service-tag">Daily routes</span>
+          <span class="service-tag">CRC verified</span>
+          <span class="service-tag">Cargo insured</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up fade-up-d2">
+        <span class="service-icon">🔧</span>
+        <div class="service-name">Trades &amp; Construction Supply</div>
+        <div class="service-desc">Urgent jobsite delivery for electrical, plumbing, HVAC, and building materials. Same-day rush when your crew can't wait.</div>
+        <div class="service-tags">
+          <span class="service-tag">Rush delivery</span>
+          <span class="service-tag">Jobsite direct</span>
+          <span class="service-tag">B2B billing</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up fade-up-d1">
+        <span class="service-icon">📦</span>
+        <div class="service-name">Courier Subcontracts</div>
+        <div class="service-desc">Overflow and last-mile delivery partnerships with national carriers. Reliable route coverage when your regular network is at capacity.</div>
+        <div class="service-tags">
+          <span class="service-tag">Overflow routes</span>
+          <span class="service-tag">Last-mile</span>
+          <span class="service-tag">VI-wide</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up fade-up-d2">
+        <span class="service-icon">📅</span>
+        <div class="service-name">Monthly Contract Delivery</div>
+        <div class="service-desc">Dedicated van and driver on a recurring contract. Predictable scheduling, locked-in rates, and priority dispatch for your business every day.</div>
+        <div class="service-tags">
+          <span class="service-tag">Fixed rate</span>
+          <span class="service-tag">Priority dispatch</span>
+          <span class="service-tag">No surprises</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up fade-up-d3" style="background:var(--gray-lt); border:2px dashed var(--gray-mid); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:200px;">
+        <span class="service-icon">💬</span>
+        <div class="service-name" style="color:var(--gray-mid);">Need Something Else?</div>
+        <div class="service-desc" style="margin-bottom:0">Tell us what you need — if it fits in a cargo van, we'll make it happen.</div>
+        <a href="#quote" style="margin-top:16px;" class="btn-primary">Ask Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── COVERAGE ───────────────────────────────────────────────── -->
+<section id="coverage">
+  <div class="container">
+    <div class="coverage-inner">
+      <div>
+        <div class="section-label fade-up">Where We Operate</div>
+        <h2 class="section-title fade-up fade-up-d1">Our <span>Coverage</span></h2>
+        <p class="section-sub fade-up fade-up-d2">Based on Vancouver Island with dedicated service in Greater Victoria and the Nanaimo region — with runs north on request.</p>
+
+        <div class="coverage-pills fade-up fade-up-d2" style="margin-top:24px;">
+          <div class="coverage-pill"><div class="pill-dot"></div>Greater Victoria</div>
+          <div class="coverage-pill"><div class="pill-dot"></div>Nanaimo Region</div>
+          <div class="coverage-pill" style="background:rgba(4,44,83,0.1);color:var(--navy)"><div class="pill-dot"></div>North Island (on request)</div>
+        </div>
+
+        <ul class="coverage-list fade-up fade-up-d3" style="margin-top:28px;">
+          <li>Victoria to Nanaimo runs from <strong>$210–$260</strong> (standard rate)</li>
+          <li>Victoria metro &amp; Westshore (Langford, Colwood, Saanich) fully covered</li>
+          <li>Nanaimo, Parksville, Qualicum Beach — regular routes available</li>
+          <li>North Island runs (Courtenay, Campbell River) — call for quote</li>
+          <li>BC Ferry surcharge passed through at actual cost + admin fee</li>
+        </ul>
+      </div>
+
+      <div class="coverage-map fade-up fade-up-d2">
+        <div class="map-svg-wrap">
+          <svg class="vi-map" viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg">
+            <!-- Water background -->
+            <rect width="420" height="480" fill="#042C53"/>
+            <!-- Vancouver Island silhouette (stylised) -->
+            <path class="map-island" d="
+              M60,400 L45,370 L50,340 L40,310 L55,280
+              L70,250 L65,220 L80,195 L100,175 L120,160
+              L140,150 L155,140 L165,125 L175,110 L185,95
+              L195,82 L205,72 L215,65 L225,60 L235,58
+              L248,60 L258,65 L268,72 L275,82 L278,95
+              L275,110 L268,125 L260,140 L255,158
+              L262,170 L270,180 L278,195 L282,212
+              L278,228 L270,242 L268,258 L272,275
+              L278,290 L280,308 L275,325 L265,340
+              L255,355 L248,368 L242,380 L238,395
+              L232,408 L225,418 L218,425 L208,430
+              L198,432 L188,430 L178,425 L168,418
+              L155,410 L140,405 L125,408 L110,412
+              L95,413 L80,410 L68,404 Z
+            "/>
+            <!-- Mainland hint top right -->
+            <path class="map-island" d="M350,50 L420,50 L420,200 L380,180 L370,150 L360,120 L355,90 L350,60 Z" opacity="0.5"/>
+            <!-- Georgia Strait label -->
+            <text x="310" y="300" fill="rgba(255,255,255,0.2)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="600" letter-spacing="0.12em" transform="rotate(-70,310,300)">GEORGIA STRAIT</text>
+            <!-- Pacific label -->
+            <text x="22" y="200" fill="rgba(255,255,255,0.2)" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="600" letter-spacing="0.1em" transform="rotate(-90,22,200)">PACIFIC OCEAN</text>
+
+            <!-- Route line Victoria to Nanaimo -->
+            <path class="map-route" d="M195,395 C200,330 220,280 242,240"/>
+
+            <!-- Victoria dot -->
+            <circle cx="195" cy="400" r="9" class="map-dot"/>
+            <text x="205" y="404" class="map-label" font-size="13">VICTORIA</text>
+
+            <!-- Nanaimo dot -->
+            <circle cx="245" cy="235" r="9" class="map-dot map-dot-2"/>
+            <text x="255" y="239" class="map-label" font-size="13">NANAIMO</text>
+
+            <!-- Campbell River hint -->
+            <circle cx="268" cy="100" r="5" fill="rgba(244,162,0,0.4)"/>
+            <text x="275" y="104" class="map-label" font-size="10" opacity="0.6">CAMPBELL RIVER</text>
+
+            <!-- VIC SPRINT watermark on map -->
+            <text x="80" y="300" fill="rgba(255,255,255,0.06)" font-family="Barlow Condensed,sans-serif" font-size="38" font-weight="900" letter-spacing="0.04em">VIC SPRINT</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RATES ──────────────────────────────────────────────────── -->
+<section id="rates">
+  <div class="container">
+    <div class="section-label fade-up">Transparent Pricing</div>
+    <h2 class="section-title fade-up fade-up-d1">Simple <span style="color:var(--accent)">Rates</span></h2>
+    <p class="section-sub fade-up fade-up-d2">No hidden fees. No surprises. Competitive rates built for Vancouver Island distances and business needs.</p>
+
+    <div class="rates-grid">
+
+      <div class="rate-card fade-up">
+        <div class="rate-type">Per Trip</div>
+        <div class="rate-name">Local Delivery</div>
+        <div class="rate-price">$65<span style="font-size:22px;font-weight:500;opacity:.6">+</span></div>
+        <div class="rate-note">From $65 — city-zone pickups &amp; drops</div>
+        <hr class="rate-divider">
+        <ul class="rate-items">
+          <li>Victoria &amp; Nanaimo metro zones</li>
+          <li>Cargo van — bulky loads welcome</li>
+          <li>Timestamped proof of delivery</li>
+          <li>2-hour minimum for hourly jobs</li>
+        </ul>
+      </div>
+
+      <div class="rate-card highlight fade-up fade-up-d1">
+        <div class="rate-type">Most Popular</div>
+        <div class="rate-name">Island Corridor</div>
+        <div class="rate-price">$210<span style="font-size:22px;font-weight:500;opacity:.6">+</span></div>
+        <div class="rate-note">Victoria → Nanaimo one-way, standard cargo</div>
+        <hr class="rate-divider">
+        <ul class="rate-items">
+          <li>~110 km one-way route</li>
+          <li>Same-day door-to-door</li>
+          <li>Rush rate available (+30%)</li>
+          <li>Return run discounts available</li>
+        </ul>
+      </div>
+
+      <div class="rate-card fade-up fade-up-d2">
+        <div class="rate-type">Best Value</div>
+        <div class="rate-name">Monthly Contract</div>
+        <div class="rate-price">$2K<span style="font-size:22px;font-weight:500;opacity:.6">/mo</span></div>
+        <div class="rate-note">From $2,000 — dedicated recurring routes</div>
+        <hr class="rate-divider">
+        <ul class="rate-items">
+          <li>Fixed monthly rate — no surprises</li>
+          <li>Priority dispatch every day</li>
+          <li>Fuel surcharge clause included</li>
+          <li>30-day written agreement</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rates-note fade-up" style="margin-top:28px;">
+      <strong>All rates are + 5% GST.</strong> Surcharges apply for after-hours (+25%), weekends (+25%), stairs ($25–$40/flight), and BC Ferries (actual fare + $40 admin). Hourly rate: $85–$125/hr with 2-hour minimum. <strong>Free quote for any job</strong> — call or fill out the form below.
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY ────────────────────────────────────────────────────── -->
+<section id="why">
+  <div class="container">
+    <div class="section-label fade-up">Why VIC SPRINT</div>
+    <h2 class="section-title fade-up fade-up-d1">Built for <span>Island Business</span></h2>
+    <div class="why-grid">
+
+      <div class="why-card fade-up">
+        <div class="why-icon-wrap">🛡️</div>
+        <div>
+          <div class="why-text-title">Fully Insured &amp; Compliant</div>
+          <div class="why-text-desc">ICBC commercial auto, $2M+ cargo &amp; liability insurance, NSC-certified, BC Carrier Profile registered. Your shipment and your business are fully protected.</div>
+        </div>
+      </div>
+
+      <div class="why-card fade-up fade-up-d1">
+        <div class="why-icon-wrap">📸</div>
+        <div>
+          <div class="why-text-title">Proof of Every Delivery</div>
+          <div class="why-text-desc">Timestamped photo proof of delivery sent to your inbox immediately after every drop-off. Signed POD available for commercial clients on request.</div>
+        </div>
+      </div>
+
+      <div class="why-card fade-up fade-up-d2">
+        <div class="why-icon-wrap">🚐</div>
+        <div>
+          <div class="why-text-title">High-Roof Cargo Van Capacity</div>
+          <div class="why-text-desc">Stand-up height loading, 487+ cu ft capacity, 1,600 lb+ payload. We handle the bulky, heavy, awkward loads that standard couriers turn away.</div>
+        </div>
+      </div>
+
+      <div class="why-card fade-up fade-up-d3">
+        <div class="why-icon-wrap">⏱️</div>
+        <div>
+          <div class="why-text-title">Consistently On Time</div>
+          <div class="why-text-desc">We use route optimisation software, live GPS tracking shared with clients on request, and confirm every pickup 30 minutes ahead. Reliability is our product.</div>
+        </div>
+      </div>
+
+      <div class="why-card fade-up">
+        <div class="why-icon-wrap">🏥</div>
+        <div>
+          <div class="why-text-title">Healthcare Trusted</div>
+          <div class="why-text-desc">Background-checked, cargo-insured, and experienced with healthcare supply chains. Approved for pharmacy, clinic, and care home delivery routes.</div>
+        </div>
+      </div>
+
+      <div class="why-card fade-up fade-up-d1">
+        <div class="why-icon-wrap">📞</div>
+        <div>
+          <div class="why-text-title">Real Person, Real Response</div>
+          <div class="why-text-desc">Call or WhatsApp and you reach the operator directly — not a call centre. Quote within 1 hour. Booking confirmed same day. No automated runaround.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ────────────────────────────────────────────────── -->
+<section id="process" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-label fade-up" style="text-align:center;">How It Works</div>
+    <h2 class="section-title fade-up fade-up-d1" style="text-align:center;">Book in <span>4 Steps</span></h2>
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="step-num">1</div>
+        <div class="step-title">Contact Us</div>
+        <div class="step-desc">Call, WhatsApp, or fill out the quote form below with your pickup and drop-off details.</div>
+      </div>
+      <div class="process-step fade-up fade-up-d1">
+        <div class="step-num">2</div>
+        <div class="step-title">Get a Quote</div>
+        <div class="step-desc">We respond within 1 hour with a clear, all-inclusive price. No surprises.</div>
+      </div>
+      <div class="process-step fade-up fade-up-d2">
+        <div class="step-num">3</div>
+        <div class="step-title">We Pick Up</div>
+        <div class="step-desc">Driver arrives at the confirmed time. Cargo loaded, secured, and on its way.</div>
+      </div>
+      <div class="process-step fade-up fade-up-d3">
+        <div class="step-num">4</div>
+        <div class="step-title">Delivered &amp; Confirmed</div>
+        <div class="step-desc">Delivery photo sent to you instantly. Invoice emailed same day. Done.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── QUOTE FORM ─────────────────────────────────────────────── -->
+<section id="quote">
+  <div class="container">
+    <div class="quote-inner">
+      <div class="quote-left">
+        <div class="section-label" style="color:var(--accent);">Ready to Book?</div>
+        <h2>Get Your <span>Free Quote</span></h2>
+        <p>Call us, send a WhatsApp, or fill out the form. We respond within 1 hour during business hours — often faster.</p>
+        <div class="contact-items">
+          <a href="tel:+16047274469" class="contact-item">
+            <div class="contact-icon ci-phone">📞</div>
+            <div>
+              <div class="contact-label">Call Direct</div>
+              <div class="contact-val">+1 (604) 727-4469</div>
+            </div>
+          </a>
+          <a href="https://wa.me/16047274469" target="_blank" class="contact-item">
+            <div class="contact-icon ci-whatsapp">💬</div>
+            <div>
+              <div class="contact-label">WhatsApp</div>
+              <div class="contact-val">+1 (604) 727-4469</div>
+            </div>
+          </a>
+          <a href="mailto:you@vicsprint.com" class="contact-item">
+            <div class="contact-icon ci-email">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">you@vicsprint.com</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="quote-form fade-up">
+        <div class="form-title">Request a Free Quote</div>
+        <form id="quoteForm" action="https://formsubmit.co/you@vicsprint.com" method="POST">
+          <input type="hidden" name="_subject" value="New Delivery Quote Request — VIC SPRINT">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company (optional)</label>
+              <input type="text" id="company" name="company" placeholder="Acme Supplies Ltd.">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(250) 555-0100" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pickup">Pickup Location *</label>
+              <input type="text" id="pickup" name="pickup_location" placeholder="Victoria, BC" required>
+            </div>
+            <div class="form-group">
+              <label for="dropoff">Drop-off Location *</label>
+              <input type="text" id="dropoff" name="dropoff_location" placeholder="Nanaimo, BC" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service Type</label>
+              <select id="service" name="service_type">
+                <option value="">Select a service...</option>
+                <option>Same-Day Delivery</option>
+                <option>Medical / Pharmacy Courier</option>
+                <option>Trades &amp; Construction Supply</option>
+                <option>Courier Subcontract</option>
+                <option>Monthly Contract Delivery</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="preferred_date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="details">Cargo Details / Notes</label>
+            <textarea id="details" name="cargo_details" placeholder="What are you shipping? Approximate size/weight? Any special requirements (fragile, medical, time-sensitive)?"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Quote Request →</button>
+          <div class="form-note">We respond within 1 hour · Mon–Sat 7am–7pm · Sun on-call</div>
+        </form>
+        <div class="success-msg" id="successMsg">✓ Quote request sent! We'll be in touch within the hour.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">VIC<span>SPRINT</span></a>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#rates">Rates</a>
+        <a href="#why">Why Us</a>
+        <a href="#quote">Get a Quote</a>
+        <a href="mailto:you@vicsprint.com">Email Us</a>
+      </div>
+      <a href="tel:+16047274469" class="btn-primary" style="font-size:14px;padding:10px 20px;">📞 +1 (604) 727-4469</a>
+    </div>
+    <div class="footer-copy">
+      © 2025 VIC SPRINT — Vancouver Island Cargo Delivery · Victoria &amp; Nanaimo, BC · NSC Certified · Fully Insured
+    </div>
+  </div>
+</footer>
+
+<!-- ── Float Buttons ──────────────────────────────────────────── -->
+<div class="float-cta" id="floatCta">
+  <a href="https://wa.me/16047274469" target="_blank" class="float-btn float-wa" title="WhatsApp">💬</a>
+  <a href="tel:+16047274469" class="float-btn float-ph" title="Call">📞</a>
+</div>
+
+<!-- ── JS ─────────────────────────────────────────────────────── -->
+<script>
+// Mobile menu
+function toggleMenu() {
+  const m = document.getElementById('mobileMenu');
+  m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
+}
+
+// Float CTA
+window.addEventListener('scroll', () => {
+  const fc = document.getElementById('floatCta');
+  fc.classList.toggle('visible', window.scrollY > 400);
+});
+
+// Fade-up observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Form submit via formsubmit.co (no backend needed)
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+  // Let formsubmit handle it — just show success after short delay for UX
+  setTimeout(() => {
+    const msg = document.getElementById('successMsg');
+    if (msg) { msg.style.display = 'block'; }
+  }, 800);
+});
+
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 80) {
+    nav.style.boxShadow = '0 4px 24px rgba(0,0,0,0.3)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
+
+// Set min date for date picker
+const dateInput = document.getElementById('date');
+if (dateInput) {
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.setAttribute('min', today);
+}
+</script>
+</body>
+</html>
